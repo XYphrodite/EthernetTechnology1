@@ -1,0 +1,57 @@
+html {
+    background-color: white;
+    color: black;
+}
+
+div{
+    background-color: aqua;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+input {
+    margin: 0.4rem;
+}
+
+blink {
+    animation: 2s linear infinite condemned_blink_effect;
+  }
+  
+  @keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+
+  figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+

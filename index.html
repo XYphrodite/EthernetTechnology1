@@ -2,18 +2,15 @@
 
 <html>
     <head>
-        <link href="#">
+        <link href="CSS/style.css" rel="stylesheet">
         <title>mySite</title>
         <meta charset="utf-8">
         <script>
-
         </script>
         <style>
-
         </style>
         <base>
         <noscript>
-
         </noscript>
         <BGSOUND></BGSOUND>
     </head>
@@ -101,7 +98,12 @@
                 <li><data value="21054">Beef Tomato</data></li>
                 <li><data value="21055">Snack Tomato</data></li>
               </ul>
-              <img src="жума.jpg" alt="Пример кода">
+              <figure>
+                <img src="жума.jpg" alt="Пример кода">
+                <figcaption>An elephant at sunset</figcaption>
+            </figure>
+            
+              
               <map>
                 <area shape="poly" coords="113,24,211,24,233,0,137,0" href="/inform/" alt="Информация">
 <area shape="poly" coords="210,24,233,0,329,0,307,24" href="/activity/" alt="Деятельность">
@@ -159,12 +161,15 @@
     <iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" tabindex="-1" aria-hidden="true" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-e031119f9e9e307a08fa610f85dbfb52.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
   <table border="1">
    <caption>Таблица размеров обуви</caption>
+   <thead>
    <tr>
     <th>Россия</th>
     <th>Великобритания</th>
     <th>Европа</th>
     <th>Длина ступни, см</th>
    </tr>
+  </thead>
+  <tbody
    <tr><td>34,5</td><td>3,5</td><td>36</td><td>23</td></tr>
    <tr><td>35,5</td><td>4</td><td>36⅔</td><td>23–23,5</td></tr>
    <tr><td>36</td><td>4,5</td><td>37⅓</td><td>23,5</td></tr>
@@ -186,12 +191,247 @@
    <tr><td>46,5</td><td>12,5</td><td>48</td><td>30,5</td></tr>
    <tr><td>47</td><td>13</td><td>48⅔</td><td>31</td></tr>
    <tr><td>48</td><td>13,5</td><td>49⅓</td><td>31,5</td></tr>
+   ></tbody>
+   <tfoot>
+    <tr>
+        <th scope="row">Totals</th>
+        <td>21,000</td>
+    </tr>
+</tfoot>
   </table> 
+  <caption>Council budget (in £) 2018</caption>
+  <table id="producttable">
+    <thead>
+      <tr>
+        <td>UPC_Code</td>
+        <td>Product_Name</td>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- existing data could optionally be included here -->
+    </tbody>
+  </table>
+  
+  <template id="productrow">
+    <tr>
+      <td class="record"></td>
+      <td></td>
+    </tr>
+  </template>
+  <table>
+    <caption>Superheros and sidekicks</caption>
+    <colgroup>
+        <col>
+        <col span="2" class="batman">
+        <col span="2" class="flash">
+    </colgroup>
+    <tr>
+        <td> </td>
+        <th scope="col">Batman</th>
+        <th scope="col">Robin</th>
+        <th scope="col">The Flash</th>
+        <th scope="col">Kid Flash</th>
+    </tr>
+    <tr>
+        <th scope="row">Skill</th>
+        <td>Smarts</td>
+        <td>Dex, acrobat</td>
+        <td>Super speed</td>
+        <td>Super speed</td>
+    </tr>
+</table>
+<form>
+  <fieldset>
+    <legend>Choose your favorite monster</legend>
+    <input type="radio" id="kraken" name="monster" value="K">
+    <label for="kraken">Kraken</label><br>
+
+    <input type="radio" id="sasquatch" name="monster" value="S">
+    <label for="sasquatch">Sasquatch</label><br>
+
+    <input type="radio" id="mothman" name="monster" value="M" />
+    <label for="mothman">Mothman</label>
+  </fieldset>
+</form>
+<keygen name="name" challenge="challenge string" keytype="type"
+        keyparams="pqg-params">
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+          <input type="range" name="b" value="50" /> +
+          <input type="number" name="a" value="10" /> =
+          <output name="result">60</output>
+        </form>
+        <select>
+          <optgroup label="Группа 1">
+            <option>Опция 1.1</option>
+          </optgroup>
+          <optgroup label="Группа 2">
+            <option>Опция 2.1</option>
+            <option>Опция 2.2</option>
+          </optgroup>
+          <optgroup label="Группа 3" disabled>
+            <option>Опция 3.1</option>
+            <option>Опция 3.2</option>
+            <option>Опция 3.3</option>
+          </optgroup>
+        </select>
+        <blink>Why would somebody use this?</blink>
+        <marquee>This text will scroll from right to left</marquee>
+
+<marquee direction="up">This text will scroll from bottom to top</marquee>
+
+<marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+  <marquee behavior="alternate">
+    This text will bounce
+  </marquee>
+</marquee>
+<multicol cols=4>Текст</multicol>
+<h1><nobr>Lorem ipsum dolor sit amet, 
+  consectetuer adipiscing elit</nobr></h1>
+
+<p><nobr>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+ sed diem nonummy nibh euismod tincidunt ut lacreet dolore 
+ magna aliguam erat volutpat.</nobr> Ut wisis enim ad minim veniam, 
+ quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+ ut aliquip ex ea commodo consequat.</p>
+ <embed src="mouse.swf" width="400" height="300" 
+ type="application/x-shockwave-flash" 
+ pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+
+ <noembed>Браузер не поддерживает работу с плагинами</noembed>
+ <span>Just a text node</span>
+<spacer type="horizontal" size="10"></spacer>
+<span>Just another text node</span>
+<spacer type="block" width="10" height="10"></spacer>
+
+ <center >
+  This text will be centered.
+</center>
+<hgroup>
+  <h1>Главный заголовок</h1>
+  <h2>Вторичный заголовок</h2>
+</hgroup>
+<pre>
+  L          TE
+    A       A
+      C    V
+       R A
+       DOU
+       LOU
+      REUSE
+      QUE TU
+      PORTES
+    ET QUI T'
+    ORNE O CI
+     VILISÉ
+    OTE-  TU VEUX
+     LA    BIEN
+    SI      RESPI
+</pre>
+<p>Использование <abbr>HTML</abbr> – весело и легко!</p>
+<p>The <acronym title="World Wide Web">WWW</acronym> is only one component of the Internet.</p>
+<b>half fat</b>
+<p>Looks like this in Hebrew: <span dir="rtl">אה, אני אוהב להיות ליד חוף הים</span></p>
+
+<p>In the computer's memory, this is stored as <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo></p>
+<cite>wuoer fweryig</cite>
+<code>ewr gwe rgwerg</code>
+<del>kjweu hrfyiegr</del>
+<p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+<p><em>Lorem ipsum dolor sit amet</em></p>
+<p><b><em>Lorem</em></b> ipsum dolor sit amet, consectetuer 
+adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna 
+aliguam erat volutpat. <em>Ut</em> wisis enim ad minim veniam, quis 
+nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo 
+consequat.</p>
+<font>Текст</font>
+<i>h yghfgfchncgy</i>
+<ins cite="../howtobeawizard.html" datetime="2018-05">
+  <p>“A wizard is never late …”</p>
+</ins>
+<p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+<mark>salamander</mark>
+<q>wuoer fweryig</q>
+<ruby>
+  明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+  </ruby>
+  <p><s>Крокодил Гена</s></p>
+  <strike>Крокодил</strike>
+  <p>Проверка, поддерживает браузер JavaScript 1.3 или нет.</p>
+  <p><code> 
+   &lt;script language=&quot;JavaScript1.3&quot;&gt; JS13 = 1; 
+    &lt;/script&gt;<Br>
+   &lt;script language=&quot;JavaScript&quot;&gt;<Br>
+   if (window.JS13) document.write(&quot;Ваш браузер поддерживает JavaScript 
+   1.3&quot;);<Br>
+   &lt;/script&gt;
+  </code></p>
+  <p>В результате выполнения скрипта вы увидите текст <samp>Ваш 
+    браузер поддерживает JavaScript 1.3</samp>, в том случае, если браузер 
+    работает с версией 1.3.</p>
+    <small>размерам</small>
+<small>весу</small>
+<strong>strong</strong>
+<sub>sub</sub>
+<sup>sup</sup>
+<tt>Текст</tt>
+<u>Текст</u>
+<p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box.</p>
+<p class="word">метоксихлор<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин</p>
+<p><big>Lorem</big> ipsum dolor sit amet, consectetuer adipiscing elit, 
+  sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat 
+  volutpat. <big>Ut</big> wisis enim ad minim veniam, quis nostrud 
+  exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo 
+  consequat.</p>
+<xmp>
+  while (<>) {
+    $org=$_;
+    s/\\["']//g;
+    s/\/\/[^:].*//;
+    s/\/\*.*\*\///g;
+    if ($comment == 1) {
+      if (s/.*\*\///) {
+        $comment = 0;
+      }
+      else {
+        next;
+      }
+    }
+    if (s/\/\*.*//) {
+      $comment = 1;
+    }
+    if (/^\s*#/) {
+      next;
+    }
+  }</xmp>
+
   </main>
           <footer>
             <p>Posted by: Hege Refsnes</p>
             <p>Contact information: <a href="mailto:someone@example.com">
             someone@example.com</a>.</p>
+            <plaintext hidden>
+              while (<>) {
+                $org=$_;
+                s/\\["']//g;
+                s/\/\/[^:].*//;
+                s/\/\*.*\*\///g;
+                if ($comment == 1) {
+                  if (s/.*\*\///) {
+                    $comment = 0;
+                  }
+                  else {
+                    next;
+                  }
+                }
+                if (s/\/\*.*//) {
+                  $comment = 1;
+                }
+                if (/^\s*#/) {
+                  next;
+                }
+              }
+             </plaintext>
+             <basefont face="Arial, Helvetica, sans-serif" size="4" color="maroon">
           </footer>
     </body>
 </html>
